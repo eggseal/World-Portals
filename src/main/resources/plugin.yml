@@ -1,0 +1,5 @@
+name: WorldPortals
+version: '${project.version}'
+main: co.wholesome_seal.worldportals.Plugin
+api-version: 1.19
+authors: [ wholesome_seal ]
