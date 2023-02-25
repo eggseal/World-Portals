@@ -1,0 +1,4 @@
+# The spread radius when teleporting a player into an area
+rtp-radius: 0
+# How many tokens will the teleport cost
+cost: 1

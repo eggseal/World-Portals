@@ -1,5 +1,27 @@
 name: WorldPortals
-version: '${project.version}'
+version: 1.0
 main: co.wholesome_seal.worldportals.Plugin
 api-version: 1.19
-authors: [ wholesome_seal ]
+authors: [wholesome_seal]
+
+commands:
+  worldportals:
+    description: "The manager for all the commands"
+    permission: worldportals.worldportals
+
+permissions:
+  worldportals.worldportals:
+    description: Permission to access the WorldPortals commands
+  worldportals.send:
+    description: Warp a player to a custom area
+  worldportals.token:
+    description: Manage the token used by the portals
+  worldportals.tparea:
+    description: Manage the portal destination areas
+  worldportals.*:
+    description: Wildcard permission for all the commands
+    children:
+      worldportals.worldportals: true
+      worldportals.send: true
+      worldportals.token: true
+      worldportals.tparea: true
